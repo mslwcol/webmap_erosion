@@ -18,7 +18,7 @@ Este proyecto fue desarrollado como una herramienta académica de visualización
 
 El visor interactivo puede abrirse en:
 
-https://mslwcol.github.io/webmap-erosion/
+https://mslwcol.github.io/webmap_erosion/
 
 ---
 
