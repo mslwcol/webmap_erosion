@@ -1,6 +1,6 @@
-# WebGIS para el Análisis de Erosión en Presas de Relaves
+# WebMAP para el Análisis de Erosión en Presas de Relaves
 
-Este repositorio contiene una **aplicación WebGIS desarrollada con Leaflet** para visualizar y analizar procesos de erosión en presas de relaves.
+Este repositorio contiene una **WebMAP desarrollada con Leaflet** para visualizar y analizar procesos de erosión en presas de relaves.
 
 El sistema integra:
 
@@ -18,13 +18,13 @@ Este proyecto fue desarrollado como una herramienta académica de visualización
 
 El visor interactivo puede abrirse en:
 
-https://mslwcol.github.io/webgis-erosion/
+https://mslwcol.github.io/webmap-erosion/
 
 ---
 
 # Tecnologías Utilizadas
 
-El WebGIS fue desarrollado utilizando las siguientes tecnologías:
+El WebMAP fue desarrollado utilizando las siguientes tecnologías:
 
 - Leaflet.js
 - JavaScript
@@ -41,7 +41,7 @@ Plugins de Leaflet utilizados:
 
 # Capas del Mapa
 
-El WebGIS integra tres conjuntos principales de datos espaciales.
+El WebMAP integra tres conjuntos principales de datos espaciales.
 
 ## Ortomosaico
 
@@ -95,7 +95,7 @@ El estadístico Gi\* permite identificar zonas donde las erosiones presentan **p
 
 ---
 
-# Funcionalidades del WebGIS
+# Funcionalidades del WebMAP
 
 El visor interactivo incluye las siguientes funciones:
 
@@ -116,7 +116,7 @@ El visor interactivo incluye las siguientes funciones:
 
 # Ejecutar el Proyecto Localmente
 
-Para evitar problemas al cargar archivos **GeoJSON o tiles del ortomosaico**, el WebGIS debe ejecutarse mediante un servidor HTTP local.
+Para evitar problemas al cargar archivos **GeoJSON o tiles del ortomosaico**, el WebMAP debe ejecutarse mediante un servidor HTTP local.
 
 ---
 
@@ -126,7 +126,7 @@ Navega a la carpeta donde se encuentra el proyecto.
 
 Ejemplo:
 ```
-C:\Users\User\Desktop\webgis-erosion
+C:\Users\User\Desktop\webmap-erosion
 ```
 Abre una terminal en esa carpeta.
 
@@ -136,7 +136,7 @@ Shift + Click derecho → **Abrir PowerShell aquí**
 ```
 o abrir una terminal y navegar manualmente:
 ```
-cd C:\Users\User\Desktop\webgis-erosion
+cd C:\Users\User\Desktop\webmap-erosion
 ```
 ---
 
@@ -172,7 +172,7 @@ o
 ```
 http://localhost:8000
 ```
-El visor WebGIS debería cargarse correctamente.
+El visor WebMAP debería cargarse correctamente.
 
 ---
 
@@ -181,7 +181,7 @@ El visor WebGIS debería cargarse correctamente.
 La estructura de carpetas debe ser:
 
 ```
-webgis-erosion
+webmap-erosion
 │
 ├─ Preprint_PG.pdf
 ├─ index.html
