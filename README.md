@@ -233,4 +233,4 @@ http://127.0.0.1:5500
 
 # Autor
 
-Por **Mariana S. Loo** para la asignatura **Geoportales** de la **Maestría en Geoinformática** y como material complementario del Proyecto de Grado **Modelo de Segmentación de Erosiones** a partir de imágenes de drones ```(Preprint_PG.pdf)```.
+Por **Mariana S. Loo** para la asignatura **Geoportales** de la **Maestría en Geoinformática** y como material complementario del Proyecto de Grado **Modelo de Segmentación de Erosiones** a partir de imágenes de drones ```(0-Preprint_PG.pdf)```.
