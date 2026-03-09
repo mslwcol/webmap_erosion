@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<source_list version="1.0" creator="Global Mapper - http://www.globalmapper.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.globalmapper.com/OSL/1/0" xsi:schemaLocation="http://www.globalmapper.com/OSL/1/0 http://www.globalmapper.com/OSL/1/0/gmc.xsd">
+<source type="TMS">
+  <name>My Map Set Name</name>
+  <FileExt>jpg</FileExt>
+  <LatLonBounds>-80.652008057,8.859291335,-80.64239502,8.895925996</LatLonBounds>
+  <NumZoomLevels>23</NumZoomLevels>
+  <TileSize>256</TileSize>
+  <BaseURL>file:///C:/Users/User/Desktop/webgis-erosion/ortomosaico/ED/</BaseURL>
+  <NativeProj>EPSG:3857</NativeProj>
+</source>
+</source_list>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Análisis Espacial de Erosión en Presas de Relaves</title>
+
+  <!-- Bloque 1: estilos base de Leaflet para renderizar el mapa principal -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <!-- Bloque 2: estilos del agrupamiento de marcadores Gi* -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+  />
+
+  <!-- Bloque 3: estilos del plugin MiniMap para mostrar un mapa de contexto -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet-minimap@3.6.1/dist/Control.MiniMap.min.css"
+  />
+
+  <!-- Bloque 4: estilos personalizados de la aplicación -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="sidebar-section">
+        <h2>Análisis Espacial de Erosión en Presas de Relaves</h2>
+        <p class="subtitle">
+          Visualización integrada de ortomosaico, estadísticas de pendiente y agrupamientos espaciales de erosiones.
+        </p>
+      </div>
+
+      <div class="sidebar-section controls-block">
+        <h3>Variables</h3>
+
+        <label for="damSelect">Erosiones</label>
+        <select id="damSelect">
+          <option value="ND">Presa de Relaves Norte</option>
+          <option value="ED">Presa de Relaves Este</option>
+        </select>
+
+        <label for="variableSelect">Pendiente</label>
+        <select id="variableSelect">
+          <option value="MAX" selected>MAX</option>
+          <option value="MEAN">MEAN</option>
+          <option value="STD">STD</option>
+          <option value="PCT90">PCT90</option>
+        </select>
+
+        <label for="opacitySlider">Transparencia de polígonos</label>
+        <input
+          type="range"
+          id="opacitySlider"
+          min="0.1"
+          max="1"
+          step="0.05"
+          value="0.5"
+        />
+        <div id="opacityValue" class="slider-value">0.50</div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Leyenda de pendiente</h3>
+        <div id="legendTitle" class="legend-title">Variable de pendiente: MAX</div>
+        <div id="legend"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Leyenda Gi*</h3>
+        <div id="giLegend" class="gi-legend"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Guía de interpretación</h3>
+        <div id="variableDescription" class="variable-description"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Información del elemento</h3>
+        <div id="featureInfo" class="feature-info">
+          Haz clic sobre un polígono o un punto para consultar sus atributos.
+        </div>
+      </div>
+    </aside>
+
+    <main id="map-wrapper">
+      <!-- Bloque 5: contenedor del mapa principal -->
+      <div id="map"></div>
+
+      <!-- Bloque 6: caja fija para mostrar coordenadas del cursor en la esquina inferior izquierda -->
+      <div id="coordinatesBox">Lat: -- | Lon: --</div>
+    </main>
+  </div>
+
+  <!-- Bloque 7: librería principal de Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Bloque 8: plugin para clusterizar los puntos Gi* -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <!-- Bloque 9: plugin MiniMap para añadir un mapa de contexto navegable -->
+  <script src="https://unpkg.com/leaflet-minimap@3.6.1/dist/Control.MiniMap.min.js"></script>
+
+  <!-- Bloque 10: lógica completa del visor cartográfico -->
+  <script src="script.js"></script>
+</body>
+</html>
