@@ -1,4 +1,4 @@
-# WebMAP para el Análisis de Erosión en Presas de Relaves
+# Trabajo Final: WEBMap para Análisis de Erosión en Presas de Relaves
 
 Este repositorio contiene una **WebMAP desarrollada con Leaflet** para visualizar y analizar procesos de erosión en presas de relaves.
 
