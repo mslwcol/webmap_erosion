@@ -183,7 +183,6 @@ La estructura de carpetas debe ser:
 ```
 webmap-erosion
 │
-├─ Preprint_PG.pdf
 ├─ index.html
 ├─ script.js
 ├─ style.css
