@@ -22,9 +22,9 @@ https://mslwcol.github.io/webmap-erosion/
 
 ---
 
-# Tecnologías Utilizadas
+# Recursos
 
-El WebMAP fue desarrollado utilizando las siguientes tecnologías:
+El WebMAP fue desarrollado utilizando:
 
 - Leaflet.js
 - JavaScript
